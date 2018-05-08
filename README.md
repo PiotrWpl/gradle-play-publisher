@@ -117,12 +117,12 @@ Once you have applied this plugin to your android application project you can co
 
 ### Specify the track
 
-As a default your APK is published to the alpha track and you can promote it to beta or production manually. If you want to directly publish to another track you can specify it via the ```track``` property:
+As a default your APK is published to the internal track and you can promote it to alpha or beta or production manually. If you want to directly publish to another track you can specify it via the ```track``` property:
 
 ```groovy
 play {
     // ...
-    track = 'production' // or 'rollout' or 'beta' or 'alpha'
+    track = 'production' // or 'rollout' or 'beta' or 'alpha' or 'internal'
     userFraction = 0.2 // only necessary for 'rollout', in this case default is 0.1 (10% of the target)
 }
 ```
